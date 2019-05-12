@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание № 4</title>
+    <script defer src="index.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 1px solid darkgray;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        td {
+            width: 50px;
+            height: 50px;
+        }
+
+        tr:nth-child(2) td {
+            border-top: 1px solid lightgray;
+        }
+
+        tr:nth-child(9) td {
+            border-bottom: 1px solid lightgray;
+        }
+
+        td:nth-child(2) {
+            border-left: 1px solid lightgray;
+        }
+
+        td:nth-child(9) {
+            border-right: 1px solid lightgray;
+        }
+
+        th {
+            padding: 8px 12px;
+        }
+
+        tr:nth-child(2n) td:nth-child(2n+1),
+        tr:nth-child(2n+1) td:nth-child(2n) {
+            background-color: black;
+        }
+
+        body {
+            text-align: center;
+            margin: 0;
+            white-space: nowrap;
+        }
+
+        body:before {
+            content: ' ';
+            height: 100vh;
+            vertical-align: middle;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <table id="table">
+    </table>
+</body>
+</html>
